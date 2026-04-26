@@ -1,39 +1,41 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from "react";
 
 export const useDeepSeekTranslation = (sourceTexts, targetLang) => {
   const [translatedTexts, setTranslatedTexts] = useState(sourceTexts);
   const [isTranslating, setIsTranslating] = useState(false);
 
   useEffect(() => {
-    if (!targetLang || targetLang === 'en') {
+    if (!targetLang || targetLang === "en") {
       setTranslatedTexts(sourceTexts);
       return;
     }
 
-    setIsTranslating(true);
+    const translateTexts = async () => {
+      setIsTranslating(true);
+      
+      try {
+        const translations = await Promise.all(
+          sourceTexts.map(async (text) => {
+            if (!text || text.trim() === "") return text;
+            
+            const response = await fetch(
+              `https://lingva.ml/api/v1/en/${targetLang}/${encodeURIComponent(text)}`
+            );
+            const data = await response.json();
+            return data.translation || text;
+          })
+        );
+        
+        setTranslatedTexts(translations);
+      } catch (error) {
+        console.error("Translation error:", error);
+        setTranslatedTexts(sourceTexts);
+      } finally {
+        setIsTranslating(false);
+      }
+    };
 
-    fetch('https://jerry-ai-backend.onrender.com/api/translate', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        texts: Object.values(sourceTexts),
-        targetLang: targetLang
-      })
-    })
-      .then(res => res.json())
-      .then(data => {
-        const keys = Object.keys(sourceTexts);
-        const results = { ...sourceTexts };
-        keys.forEach((key, index) => {
-          results[key] = data.translations[index] || sourceTexts[key];
-        });
-        setTranslatedTexts(results);
-        setIsTranslating(false);
-      })
-      .catch(err => {
-        console.error('Translation error:', err);
-        setIsTranslating(false);
-      });
+    translateTexts();
   }, [sourceTexts, targetLang]);
 
   return { translatedTexts, isTranslating };

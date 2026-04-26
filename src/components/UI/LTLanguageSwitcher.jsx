@@ -23,46 +23,36 @@ const LTLanguageSwitcher = ({ globeSrc, onChange }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Fetch languages from backend with timeout
 useEffect(() => {
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
-
-  fetch('https://jerry-ai-backend.onrender.com/api/languages', { signal: controller.signal })
-    .then(res => {
-      if (!res.ok) throw new Error('Failed to fetch languages');
-      return res.json();
-    })
-    .then(data => {
-      console.log('✅ Loaded languages:', data.count);
-      setLangs(data.languages);
-      setLoading(false);
-      const defaultLang = data.languages.find(l => l.code === "en");
-      if (defaultLang) setSelectedLang(defaultLang);
-    })
-    .catch(err => {
-      console.error("Failed to load languages:", err);
-      // Fallback languages
-      const fallbackLangs = [
-        { code: "en", name: "English" },
-        { code: "zh", name: "Simplified Chinese" },
-        { code: "es", name: "Spanish" },
-        { code: "fr", name: "French" },
-        { code: "de", name: "German" },
-        { code: "ja", name: "Japanese" },
-        { code: "ko", name: "Korean" },
-        { code: "ru", name: "Russian" },
-        { code: "ar", name: "Arabic" },
-        { code: "it", name: "Italian" },
-        { code: "pt", name: "Portuguese" }
-      ];
-      setLangs(fallbackLangs);
-      setLoading(false);
-      setError(err.message);
-    })
-    .finally(() => clearTimeout(timeoutId));
-}, []);
-
+    const localLanguages = [
+      { code: "en", name: "English" },
+      { code: "zh", name: "Simplified Chinese" },
+      { code: "es", name: "Spanish" },
+      { code: "fr", name: "French" },
+      { code: "de", name: "German" },
+      { code: "ja", name: "Japanese" },
+      { code: "ko", name: "Korean" },
+      { code: "ru", name: "Russian" },
+      { code: "ar", name: "Arabic" },
+      { code: "it", name: "Italian" },
+      { code: "pt", name: "Portuguese" },
+      { code: "hi", name: "Hindi" },
+      { code: "tr", name: "Turkish" },
+      { code: "vi", name: "Vietnamese" },
+      { code: "th", name: "Thai" },
+      { code: "pl", name: "Polish" },
+      { code: "uk", name: "Ukrainian" },
+      { code: "el", name: "Greek" },
+      { code: "he", name: "Hebrew" },
+      { code: "sv", name: "Swedish" }
+    ];
+    
+    console.log('✅ Loaded', localLanguages.length, 'languages');
+    setLangs(localLanguages);
+    setLoading(false);
+    const defaultLang = localLanguages.find(l => l.code === "en");
+    if (defaultLang) setSelectedLang(defaultLang);
+  }, []); 
 
   useEffect(() => {
     const handleClickOutside = (event) => {
