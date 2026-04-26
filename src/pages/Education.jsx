@@ -433,11 +433,11 @@ const Education = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="edu-footer-title">{t("footerConnection")}</div>
               <div className="edu-footer-links">
-                <a href="#" className="edu-footer-link">{t("facebook")}</a>
-                <a href="#" className="edu-footer-link">{t("linkedin")}</a>
-                <a href="#" className="edu-footer-link">{t("twitter")}</a>
-                <a href="#" className="edu-footer-link">{t("tiktok")}</a>
-                <a href="#" className="edu-footer-link">{t("telegram")}</a>
+                <a href="/" className="edu-footer-link">{t("facebook")}</a>
+                <a href="/" className="edu-footer-link">{t("linkedin")}</a>
+                <a href="/" className="edu-footer-link">{t("twitter")}</a>
+                <a href="/" className="edu-footer-link">{t("tiktok")}</a>
+                <a href="/" className="edu-footer-link">{t("telegram")}</a>
               </div>
             </div>
           </div>

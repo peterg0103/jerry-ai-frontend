@@ -89,11 +89,11 @@ const Footer = () => {
         <div>
           <div style={styles.footerTitle}>Connection</div>
           <div style={styles.footerLinks}>
-            <a href="#" style={styles.footerLink}>Facebook</a>
-            <a href="#" style={styles.footerLink}>LinkedIn</a>
-            <a href="#" style={styles.footerLink}>Twitter</a>
-            <a href="#" style={styles.footerLink}>Tik Tok</a>
-            <a href="#" style={styles.footerLink}>Telegram</a>
+            <a href="/" style={styles.footerLink}>Facebook</a>
+            <a href="/" style={styles.footerLink}>LinkedIn</a>
+            <a href="/" style={styles.footerLink}>Twitter</a>
+            <a href="/" style={styles.footerLink}>Tik Tok</a>
+            <a href="/" style={styles.footerLink}>Telegram</a>
           </div>
         </div>
       </div>

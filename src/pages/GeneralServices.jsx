@@ -529,11 +529,11 @@ const GeneralServices = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="gs-footer-title">{t("footerConnection")}</div>
               <div className="gs-footer-links">
-                <a href="#" className="gs-footer-link">{t("facebook")}</a>
-                <a href="#" className="gs-footer-link">{t("linkedin")}</a>
-                <a href="#" className="gs-footer-link">{t("twitter")}</a>
-                <a href="#" className="gs-footer-link">{t("tiktok")}</a>
-                <a href="#" className="gs-footer-link">{t("telegram")}</a>
+                <a href="/" className="gs-footer-link">{t("facebook")}</a>
+                <a href="/" className="gs-footer-link">{t("linkedin")}</a>
+                <a href="/" className="gs-footer-link">{t("twitter")}</a>
+                <a href="/" className="gs-footer-link">{t("tiktok")}</a>
+                <a href="/" className="gs-footer-link">{t("telegram")}</a>
               </div>
             </div>
           </div>

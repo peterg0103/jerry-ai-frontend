@@ -1,4 +1,4 @@
-ï»¿import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useDeepSeekTranslation } from "../hooks/useDeepSeekTranslation";
 import { Link } from "react-router-dom";
 import LTLanguageSwitcher from "../components/UI/LTLanguageSwitcher";
@@ -13,10 +13,10 @@ const AboutUs = ({ targetLang, setTargetLang }) => {
 
   const EN = useMemo(() => ({
     aboutTitle: "About Us",
-    p1: "Over the years in the field of web development, Jerry - GP., the Founder and CEO of Jerry's AI, has witnessed firsthand how narrow and unpredictable the path to building a successful startup can be. What separates companies that thrive from those that fade isn't flashy valuations or the latest technology â€” it's the people.",
+    p1: "Over the years in the field of web development, Jerry - GP., the Founder and CEO of Jerry's AI, has witnessed firsthand how narrow and unpredictable the path to building a successful startup can be. What separates companies that thrive from those that fade isn't flashy valuations or the latest technology — it's the people.",
     p2: "Jerry firmly believes that long-term success is built on strong teams, a unified purpose, and a company culture rooted in trust, collaboration, and continuous growth. These values have enabled Jerry's AI to overcome countless challenges and become a trusted name, securing partnerships with reputable clients around the globe.",
     p3: "His journey began in 2015, a path marked by relentless learning, starting from the basics and culminating in the achievement of his academic goals. Jerry earned a Bachelor of Business Administration and a Degree in Professional IT, which laid the foundation for his passion for technology and innovation.",
-    p4: "Jerry had excelled academically and deepened his interest in digital innovation. With a forward-thinking mindset, he has been instrumental in product development across various platforms â€” including operating systems, Android, and iOS.",
+    p4: "Jerry had excelled academically and deepened his interest in digital innovation. With a forward-thinking mindset, he has been instrumental in product development across various platforms — including operating systems, Android, and iOS.",
     p5: "He is also deeply committed to building diverse, high-performing teams that bring together individuals from different backgrounds to achieve extraordinary results. His leadership reflects a commitment to excellence, innovation, and fostering an inclusive workplace where creativity and collaboration drive success.",
     footerCompany: "Company",
     footerServices: "Services",
@@ -47,7 +47,7 @@ const AboutUs = ({ targetLang, setTargetLang }) => {
     twitter: "Twitter",
     tiktok: "Tik Tok",
     telegram: "Telegram",
-    copyright: "Â© 2025 Jerry's AI. All rights reserved.",
+    copyright: "© 2025 Jerry's AI. All rights reserved.",
   }), []);
 
   const { translatedTexts } = useDeepSeekTranslation(EN, targetLang);
@@ -122,11 +122,11 @@ const AboutUs = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="footer-title">{t("footerConnection")}</div>
               <div className="footer-links">
-                <a href="#">{t("facebook")}</a>
-                <a href="#">{t("linkedin")}</a>
-                <a href="#">{t("twitter")}</a>
-                <a href="#">{t("tiktok")}</a>
-                <a href="#">{t("telegram")}</a>
+                <a href="/">{t("facebook")}</a>
+                <a href="/">{t("linkedin")}</a>
+                <a href="/">{t("twitter")}</a>
+                <a href="/">{t("tiktok")}</a>
+                <a href="/">{t("telegram")}</a>
               </div>
             </div>
           </div>

@@ -694,11 +694,11 @@ const Register = ({ targetLang, setTargetLang }) => {
             <div>
               <div style={styles.footerTitle}>{t("footerConnection")}</div>
               <div style={styles.footerLinks}>
-                <a href="#" style={styles.footerLink}>{t("facebook")}</a>
-                <a href="#" style={styles.footerLink}>{t("linkedin")}</a>
-                <a href="#" style={styles.footerLink}>{t("twitter")}</a>
-                <a href="#" style={styles.footerLink}>{t("tiktok")}</a>
-                <a href="#" style={styles.footerLink}>{t("telegram")}</a>
+                <a href="/" style={styles.footerLink}>{t("facebook")}</a>
+                <a href="/" style={styles.footerLink}>{t("linkedin")}</a>
+                <a href="/" style={styles.footerLink}>{t("twitter")}</a>
+                <a href="/" style={styles.footerLink}>{t("tiktok")}</a>
+                <a href="/" style={styles.footerLink}>{t("telegram")}</a>
               </div>
             </div>
           </div>

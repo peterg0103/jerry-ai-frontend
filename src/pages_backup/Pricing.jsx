@@ -396,19 +396,19 @@ const Pricing = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="pricing-footer-title">{t("footerConnection")}</div>
               <div className="pricing-footer-links">
-                <a href="#" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("facebook")}
                 </a>
-                <a href="#" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("linkedin")}
                 </a>
-                <a href="#" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("twitter")}
                 </a>
-                <a href="#" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("tiktok")}
                 </a>
-                <a href="#" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="pricing-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("telegram")}
                 </a>
               </div>

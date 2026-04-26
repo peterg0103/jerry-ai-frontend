@@ -414,19 +414,19 @@ const WebDevelopment = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="webdev-footer-title">{t("footerConnection")}</div>
               <div className="webdev-footer-links">
-                <a href="#" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("facebook")}
                 </a>
-                <a href="#" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("linkedin")}
                 </a>
-                <a href="#" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("twitter")}
                 </a>
-                <a href="#" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("tiktok")}
                 </a>
-                <a href="#" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
+                <a href="/" className="webdev-footer-link" onClick={(e) => { e.preventDefault(); alert("Link later"); }}>
                   {t("telegram")}
                 </a>
               </div>

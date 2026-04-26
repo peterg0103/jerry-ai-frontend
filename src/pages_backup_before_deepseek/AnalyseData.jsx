@@ -387,11 +387,11 @@ const AnalyseData = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="dm-footer-title">{t("footerConnection")}</div>
               <div className="dm-footer-links">
-                <a href="#" className="dm-footer-link">{t("facebook")}</a>
-                <a href="#" className="dm-footer-link">{t("linkedin")}</a>
-                <a href="#" className="dm-footer-link">{t("twitter")}</a>
-                <a href="#" className="dm-footer-link">{t("tiktok")}</a>
-                <a href="#" className="dm-footer-link">{t("telegram")}</a>
+                <a href="/" className="dm-footer-link">{t("facebook")}</a>
+                <a href="/" className="dm-footer-link">{t("linkedin")}</a>
+                <a href="/" className="dm-footer-link">{t("twitter")}</a>
+                <a href="/" className="dm-footer-link">{t("tiktok")}</a>
+                <a href="/" className="dm-footer-link">{t("telegram")}</a>
               </div>
             </div>
           </div>

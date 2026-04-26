@@ -416,11 +416,11 @@ const FindMyPhone = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="footer-title">{t("footerConnection")}</div>
               <div className="footer-links">
-                <a href="#">{t("facebook")}</a>
-                <a href="#">{t("linkedin")}</a>
-                <a href="#">{t("twitter")}</a>
-                <a href="#">{t("tiktok")}</a>
-                <a href="#">{t("telegram")}</a>
+                <a href="/">{t("facebook")}</a>
+                <a href="/">{t("linkedin")}</a>
+                <a href="/">{t("twitter")}</a>
+                <a href="/">{t("tiktok")}</a>
+                <a href="/">{t("telegram")}</a>
               </div>
             </div>
           </div>

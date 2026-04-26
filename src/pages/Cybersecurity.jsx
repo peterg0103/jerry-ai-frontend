@@ -426,11 +426,11 @@ const Cybersecurity = ({ targetLang, setTargetLang }) => {
             <div>
               <div className="cyber-footer-title">{t("footerConnection")}</div>
               <div className="cyber-footer-links">
-                <a href="#" className="cyber-footer-link">{t("facebook")}</a>
-                <a href="#" className="cyber-footer-link">{t("linkedin")}</a>
-                <a href="#" className="cyber-footer-link">{t("twitter")}</a>
-                <a href="#" className="cyber-footer-link">{t("tiktok")}</a>
-                <a href="#" className="cyber-footer-link">{t("telegram")}</a>
+                <a href="/" className="cyber-footer-link">{t("facebook")}</a>
+                <a href="/" className="cyber-footer-link">{t("linkedin")}</a>
+                <a href="/" className="cyber-footer-link">{t("twitter")}</a>
+                <a href="/" className="cyber-footer-link">{t("tiktok")}</a>
+                <a href="/" className="cyber-footer-link">{t("telegram")}</a>
               </div>
             </div>
           </div>
