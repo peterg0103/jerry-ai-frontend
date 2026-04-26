@@ -1,0 +1,494 @@
+/* Base styles (desktop) */
+.appdev-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px 0 16px;
+  box-sizing: border-box;
+}
+
+.appdev-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 0;
+  padding: 28px 32px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
+}
+
+.appdev-title {
+  font-size: 48px;
+  color: #10a7ff;
+  text-align: center;
+  margin: 6px 0 20px;
+  font-weight: 800;
+}
+
+.appdev-intro-text {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #111827;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.appdev-image-section {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.appdev-image {
+  width: 236px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  background: white;
+  padding: 10px;
+}
+
+.appdev-image-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.appdev-section {
+  margin: 24px 0 28px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.appdev-section-title {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #0f172a;
+  border-bottom: 2px solid rgba(139, 92, 246, 0.3);
+  padding-bottom: 10px;
+}
+
+.appdev-content {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #111827;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.appdev-content-paragraph {
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.appdev-list {
+  margin: 12px 0 0 22px;
+  padding: 0;
+}
+
+.appdev-list-item {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.appdev-highlight {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.appdev-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.appdev-process-card {
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 10px;
+  padding: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.appdev-process-card-hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+}
+
+.appdev-process-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #8b5cf6;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appdev-process-desc {
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+.appdev-platforms {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.appdev-platform-card {
+  background: white;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.appdev-platform-card-hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.2);
+  border-color: #8b5cf6;
+}
+
+.appdev-platform-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.appdev-platform-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.appdev-platform-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.appdev-enhanced {
+  background: linear-gradient(135deg, rgba(16, 167, 255, 0.05), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 35px 0;
+}
+
+.appdev-enhanced-title {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #8b5cf6;
+  text-align: center;
+}
+
+.appdev-cta {
+  text-align: center;
+  margin: 40px 0 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(16, 167, 255, 0.1), rgba(74, 108, 247, 0.1));
+  border: 2px solid rgba(16, 167, 255, 0.3);
+  border-radius: 12px;
+}
+
+.appdev-cta-title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.appdev-cta-text {
+  font-size: 16px;
+  color: #334155;
+  margin: 0 0 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appdev-cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #10a7ff, #4a6cf7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(16, 167, 255, 0.25);
+}
+
+.appdev-meta {
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(17,24,39,.78);
+  text-align: center;
+}
+
+/* Footer styles */
+.appdev-footer-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.appdev-footer-title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  opacity: .95;
+  text-align: center;
+  color: #fff;
+}
+
+.appdev-footer-links {
+  text-align: center;
+}
+
+.appdev-footer-link {
+  display: block;
+  color: rgba(255, 255, 255, .90);
+  padding: 6px 0;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.appdev-copyright {
+  margin: 18px auto 0;
+  opacity: .75;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .appdev-container {
+    padding: 5px 10px 0 10px;
+  }
+
+  .appdev-card {
+    padding: 20px 16px;
+  }
+
+  .appdev-title {
+    font-size: 36px;
+    margin: 10px 0 15px;
+  }
+
+  .appdev-intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .appdev-image-section {
+    margin: 20px 0 25px;
+  }
+
+  .appdev-image {
+    width: 200px;
+    height: 170px;
+  }
+
+  .appdev-section {
+    margin: 16px 0 20px;
+    padding: 16px;
+  }
+
+  .appdev-section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .appdev-process-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .appdev-platforms {
+    gap: 20px;
+  }
+
+  .appdev-platform-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .appdev-platform-icon {
+    font-size: 40px;
+  }
+
+  .appdev-platform-title {
+    font-size: 18px;
+  }
+
+  .appdev-platform-desc {
+    font-size: 13px;
+  }
+
+  .appdev-enhanced {
+    padding: 22px 18px;
+    margin: 25px 0;
+  }
+
+  .appdev-cta {
+    padding: 24px 18px;
+  }
+
+  .appdev-cta-title {
+    font-size: 22px;
+  }
+
+  .appdev-cta-button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  /* Footer mobile */
+  footer .appdev-footer-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 0 14px 14px !important;
+  }
+
+  footer .appdev-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+    max-width: calc(50% - 9px) !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .appdev-container {
+    padding: 0 5px;
+  }
+
+  .appdev-card {
+    padding: 16px 12px;
+    border-radius: 8px;
+  }
+
+  .appdev-title {
+    font-size: 28px;
+    margin: 8px 0 12px;
+  }
+
+  .appdev-intro-text {
+    font-size: 15px;
+  }
+
+  .appdev-image {
+    width: 180px;
+    height: 150px;
+  }
+
+  .appdev-section {
+    padding: 14px;
+  }
+
+  .appdev-section-title {
+    font-size: 18px;
+  }
+
+  .appdev-process-title {
+    font-size: 16px;
+  }
+
+  .appdev-process-desc {
+    font-size: 14px;
+  }
+
+  .appdev-platform-card {
+    padding: 18px 16px;
+  }
+
+  .appdev-platform-icon {
+    font-size: 36px;
+  }
+
+  .appdev-platform-title {
+    font-size: 16px;
+  }
+
+  .appdev-platform-desc {
+    font-size: 12px;
+  }
+
+  .appdev-enhanced {
+    padding: 18px 16px;
+  }
+
+  .appdev-enhanced-title {
+    font-size: 18px;
+  }
+
+  .appdev-cta {
+    padding: 20px 15px;
+  }
+
+  .appdev-cta-title {
+    font-size: 20px;
+  }
+
+  .appdev-cta-text {
+    font-size: 15px;
+  }
+
+  .appdev-cta-button {
+    padding: 12px 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  footer .appdev-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+  }
+
+  .appdev-footer-title {
+    font-size: 14px;
+  }
+
+  .appdev-footer-link {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .appdev-copyright {
+    font-size: 11px;
+    margin: 12px auto 0;
+  }
+
+  .appdev-meta {
+    font-size: 11px;
+    margin-top: 16px;
+  }
+}

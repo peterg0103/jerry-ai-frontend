@@ -1,0 +1,571 @@
+/* GeneralServices.css - COMPLETE FILE */
+
+/* Base styles (desktop) */
+.gs-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px 0 16px;
+  box-sizing: border-box;
+}
+
+.gs-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 0;
+  padding: 28px 32px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
+}
+
+.gs-title {
+  font-size: 48px;
+  color: #10a7ff;
+  text-align: center;
+  margin: 6px 0 20px;
+  font-weight: 800;
+}
+
+.gs-hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(16, 167, 255, 0.1), rgba(74, 108, 247, 0.1));
+  border-radius: 12px;
+}
+
+.gs-hero-title {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.gs-hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gs-section {
+  margin: 32px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.gs-section-title {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #10a7ff;
+  padding-bottom: 10px;
+}
+
+.gs-subsection-title {
+  font-size: 22px;
+  color: #10a7ff;
+  margin: 30px 0 20px;
+}
+
+.gs-service-category {
+  font-size: 24px;
+  color: #4a6cf7;
+  margin: 40px 0 20px;
+  padding: 10px;
+  background: rgba(74, 108, 247, 0.1);
+  border-radius: 8px;
+}
+
+.gs-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.gs-service-card {
+  background: white;
+  border: 1px solid rgba(16, 167, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
+}
+
+.gs-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(16, 167, 255, 0.15);
+}
+
+.gs-service-title {
+  font-size: 20px;
+  color: #10a7ff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.gs-service-desc {
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.gs-service-help {
+  font-size: 14px;
+  color: #64748b;
+  padding: 12px;
+  background: rgba(16, 167, 255, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #10a7ff;
+  margin-top: auto;
+}
+
+.gs-help-points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gs-help-point {
+  padding: 15px;
+  background: white;
+  border: 1px solid rgba(16, 167, 255, 0.2);
+  border-radius: 8px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.gs-efficiency-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.gs-efficiency-card {
+  background: white;
+  border: 1px solid #10a7ff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.gs-efficiency-card-title {
+  font-size: 18px;
+  color: #10a7ff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.gs-efficiency-card-desc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.gs-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gs-matrix-item {
+  padding: 15px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.gs-matrix-problem {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.gs-matrix-solution {
+  font-size: 14px;
+  color: #10a7ff;
+}
+
+.gs-guidance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gs-guidance-item {
+  padding: 15px;
+  background: rgba(16, 167, 255, 0.05);
+  border-radius: 8px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.gs-cta-section {
+  text-align: center;
+  margin: 40px 0 30px;
+  padding: 40px;
+  background: linear-gradient(135deg, #10a7ff, #4a6cf7);
+  border-radius: 12px;
+  color: white;
+}
+
+.gs-cta-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.gs-cta-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+.gs-cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background: white;
+  color: #10a7ff;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gs-meta {
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(17,24,39,.78);
+  text-align: center;
+}
+
+/* Footer styles - Desktop */
+.gs-footer-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.gs-footer-title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  opacity: .95;
+  text-align: center;
+  color: #fff;
+}
+
+.gs-footer-links {
+  text-align: center;
+}
+
+.gs-footer-link {
+  display: block;
+  color: rgba(255, 255, 255, .90);
+  padding: 6px 0;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.gs-copyright {
+  margin: 18px auto 0;
+  opacity: .75;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .gs-container {
+    padding: 5px 10px 0 10px;
+  }
+
+  .gs-card {
+    padding: 20px 16px;
+  }
+
+  .gs-title {
+    font-size: 36px;
+    margin: 10px 0 15px;
+  }
+
+  .gs-hero-section {
+    margin-bottom: 25px;
+    padding: 15px;
+  }
+
+  .gs-hero-title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .gs-hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .gs-section {
+    margin: 20px 0;
+    padding: 16px;
+  }
+
+  .gs-section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .gs-subsection-title {
+    font-size: 20px;
+    margin: 20px 0 15px;
+  }
+
+  .gs-service-category {
+    font-size: 20px;
+    margin: 25px 0 15px;
+    padding: 8px;
+  }
+
+  .gs-service-grid,
+  .gs-help-points,
+  .gs-efficiency-grid,
+  .gs-matrix-grid,
+  .gs-guidance-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gs-service-card {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .gs-service-title {
+    font-size: 18px;
+  }
+
+  .gs-service-desc {
+    font-size: 14px;
+  }
+
+  .gs-service-help {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .gs-help-point {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .gs-efficiency-card {
+    padding: 16px;
+  }
+
+  .gs-efficiency-card-title {
+    font-size: 16px;
+  }
+
+  .gs-efficiency-card-desc {
+    font-size: 13px;
+  }
+
+  .gs-matrix-item {
+    padding: 12px;
+  }
+
+  .gs-matrix-problem {
+    font-size: 14px;
+  }
+
+  .gs-matrix-solution {
+    font-size: 13px;
+  }
+
+  .gs-guidance-item {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .gs-cta-section {
+    margin: 25px 0 20px;
+    padding: 25px 20px;
+  }
+
+  .gs-cta-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .gs-cta-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .gs-cta-button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  /* Mobile footer styles - ONLY FOR FOOTER */
+  footer .gs-footer-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 0 14px 14px !important;
+  }
+
+  footer .gs-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+    max-width: calc(50% - 9px) !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .gs-container {
+    padding: 0 5px;
+  }
+
+  .gs-card {
+    padding: 15px 12px;
+    border-radius: 8px;
+  }
+
+  .gs-title {
+    font-size: 28px;
+    margin: 8px 0 12px;
+  }
+
+  .gs-hero-section {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .gs-hero-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .gs-hero-text {
+    font-size: 15px;
+  }
+
+  .gs-section {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  .gs-section-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+  }
+
+  .gs-subsection-title {
+    font-size: 18px;
+    margin: 15px 0 12px;
+  }
+
+  .gs-service-category {
+    font-size: 18px;
+    margin: 20px 0 12px;
+    padding: 6px;
+  }
+
+  .gs-service-card {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .gs-service-title {
+    font-size: 16px;
+  }
+
+  .gs-service-desc {
+    font-size: 13px;
+  }
+
+  .gs-service-help {
+    padding: 8px;
+  }
+
+  .gs-cta-section {
+    margin: 20px 0 15px;
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .gs-cta-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .gs-cta-text {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
+  .gs-cta-button {
+    padding: 10px 25px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  footer .gs-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+  }
+
+  .gs-footer-title {
+    font-size: 14px;
+  }
+
+  .gs-footer-link {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .gs-copyright {
+    font-size: 11px;
+    margin: 12px auto 0;
+  }
+
+  .gs-meta {
+    font-size: 11px;
+    margin-top: 16px;
+  }
+}

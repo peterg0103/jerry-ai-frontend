@@ -1,0 +1,294 @@
+/* =============================================
+   AboutUs.css - Jerry's AI About Us Page
+   Clean version: no gaps + no CSS conflicts
+   ============================================= */
+
+:root {
+  --header-h: 110px;
+  --header-bg: #fcfdff;
+  --body-bg: #ffffff;
+  --footer-bg: #5c5c5c;
+  --text: #111;
+  --shadow: 0 10px 26px rgba(0, 0, 0, .10);
+  --brand: #10a7ff;
+  --card-border: rgba(0, 0, 0, .06);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--body-bg);
+  color: var(--text);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ========== HEADER ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  height: var(--header-h);
+  max-width: 960px;
+  width: 100%;
+  background: var(--header-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+
+.logo { height: 70px; width: auto; display: block; }
+
+header .logo,
+.header .logo,
+.brand img {
+  height: 75px !important;
+  width: auto !important;
+  max-width: 150px !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: var(--brand);
+  white-space: nowrap;
+}
+
+/* Ensure content starts clearly below fixed header */
+.about-page-wrapper {
+  margin-top: var(--header-h);
+}
+
+/* Slight professional spacing above first paragraph */
+.about-content-card > p:first-of-type {
+  margin-top: 8px;
+}
+
+
+/* ========== PAGE STRUCTURE ========== */
+.page {
+  min-height: calc(100vh - var(--header-h));
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMPORTANT: .page already adds padding-top for the fixed header */
+.about-page-wrapper {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;              /* keep centered */
+  padding: 8px 16px 0 16px;    /* small gap under header */
+  box-sizing: border-box;
+}
+
+/* Title */
+.about-title {
+  font-size: 48px;
+  color: var(--brand);
+  text-align: center;
+  margin: 0 0 8px 0;
+  font-weight: 800;
+}
+
+/* Content card */
+.about-content-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid var(--card-border);
+  border-radius: 0;
+  padding: 0px;
+  box-shadow: var(--shadow);
+  margin-bottom: 0;
+}
+
+/* Paragraph spacing */
+.about-content-card p {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.about-last-paragraph { margin-bottom: 0 !important; }
+
+/* Float images (no wrapper = no gap) */
+.about-float-right {
+  float: right;
+  max-width: 170px;
+  height: auto;
+  margin: 0 0 12px 20px;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.about-float-left {
+  float: left;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 20px 10px 0;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Make sure card contains floats */
+.about-content-card::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Footer */
+.about-footer {
+  max-width: 960px;
+  width: 100%;
+  margin: 12px auto 0;
+  background: var(--footer-bg);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+.about-footer div {
+  opacity: .75;
+  font-size: 13px;
+}
+
+/* ===============================
+   FOOTER - FIXED VERSION
+   =============================== */
+
+footer {
+  width: min(100%, var(--page-max));
+  margin: 18px auto 0;
+  background: var(--footer-bg);
+  color: #fff;
+  padding: 24px 18px;
+}
+
+.footer-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.footer-title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  opacity: .95;
+  text-align: center;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links a {
+  display: block;
+  color: rgba(255, 255, 255, .90);
+  padding: 6px 0;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  word-break: normal;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  margin: 18px auto 0;
+  opacity: .75;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* MOBILE */
+@media (max-width: 820px) {
+  .footer-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 0 14px 14px;
+  }
+
+  .footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+    max-width: calc(50% - 9px) !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 720px) {
+
+  .header { padding: 8px 12px; }
+  .title { font-size: 26px; }
+  .about-title { font-size: 32px; }
+
+  .about-float-right,
+  .about-float-left {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 16px auto 16px auto !important; /* slightly more breathing room */
+  }
+
+  .about-content-card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

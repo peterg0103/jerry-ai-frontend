@@ -1,0 +1,569 @@
+/* WebDevelopment.css */
+
+/* Base styles (desktop) */
+.webdev-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 16px 0 16px;
+  box-sizing: border-box;
+}
+
+.webdev-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 0;
+  padding: 28px 32px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
+}
+
+.webdev-title {
+  font-size: 48px;
+  color: #10a7ff;
+  text-align: center;
+  margin: 6px 0 20px;
+  font-weight: 800;
+}
+
+.webdev-intro-text {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #111827;
+  textAlign: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.webdev-image-section {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.webdev-image {
+  width: 236px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  background: white;
+  padding: 10px;
+}
+
+.webdev-image-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.webdev-section {
+  margin: 24px 0 28px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.webdev-section-title {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #0f172a;
+  border-bottom: 2px solid rgba(16, 185, 129, 0.3);
+  padding-bottom: 10px;
+}
+
+.webdev-content {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #111827;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.webdev-content-paragraph {
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.webdev-list {
+  margin: 12px 0 0 22px;
+  padding: 0;
+}
+
+.webdev-list-item {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.webdev-highlight {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.webdev-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.webdev-service-card {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 10px;
+  padding: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.webdev-service-card-hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+}
+
+.webdev-service-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.webdev-service-desc {
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+.webdev-tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.webdev-tech-card {
+  background: white;
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  border-radius: 12px;
+  padding: 22px 18px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.webdev-tech-card-hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+}
+
+.webdev-tech-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.webdev-tech-title {
+  margin: 0 0 8px;
+  font-size: 17px;
+  color: #0f172a;
+}
+
+.webdev-tech-desc {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.webdev-enhanced {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 167, 255, 0.05));
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 35px 0;
+}
+
+.webdev-enhanced-title {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #10b981;
+  text-align: center;
+}
+
+.webdev-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.webdev-benefit-card {
+  background: white;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.webdev-benefit-icon {
+  font-size: 32px;
+  color: #10b981;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.webdev-benefit-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.webdev-benefit-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.webdev-cta {
+  text-align: center;
+  margin: 40px 0 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(16, 167, 255, 0.1), rgba(74, 108, 247, 0.1));
+  border: 2px solid rgba(16, 167, 255, 0.3);
+  border-radius: 12px;
+}
+
+.webdev-cta-title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.webdev-cta-text {
+  font-size: 16px;
+  color: #334155;
+  margin: 0 0 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webdev-cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #10a7ff, #4a6cf7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(16, 167, 255, 0.25);
+}
+
+.webdev-meta {
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(17,24,39,.78);
+  text-align: center;
+}
+
+/* Footer styles */
+.webdev-footer-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.webdev-footer-title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  opacity: .95;
+  text-align: center;
+  color: #fff;
+}
+
+.webdev-footer-links {
+  text-align: center;
+}
+
+.webdev-footer-link {
+  display: block;
+  color: rgba(255, 255, 255, .90);
+  padding: 6px 0;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: visible;
+  text-decoration: none;
+}
+
+.webdev-copyright {
+  margin: 18px auto 0;
+  opacity: .75;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .webdev-container {
+    padding: 5px 10px 0 10px;
+  }
+
+  .webdev-card {
+    padding: 20px 16px;
+  }
+
+  .webdev-title {
+    font-size: 36px;
+    margin: 10px 0 15px;
+  }
+
+  .webdev-intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .webdev-image-section {
+    margin: 20px 0 25px;
+  }
+
+  .webdev-image {
+    width: 200px;
+    height: 170px;
+  }
+
+  .webdev-section {
+    margin: 16px 0 20px;
+    padding: 16px;
+  }
+
+  .webdev-section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .webdev-services-grid,
+  .webdev-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .webdev-tech-stack {
+    gap: 15px;
+  }
+
+  .webdev-tech-card {
+    width: 160px;
+    padding: 18px 14px;
+  }
+
+  .webdev-tech-icon {
+    font-size: 32px;
+  }
+
+  .webdev-tech-title {
+    font-size: 16px;
+  }
+
+  .webdev-tech-desc {
+    font-size: 12px;
+  }
+
+  .webdev-enhanced {
+    padding: 22px 18px;
+    margin: 25px 0;
+  }
+
+  .webdev-enhanced-title {
+    font-size: 20px;
+  }
+
+  .webdev-benefit-card {
+    padding: 18px;
+  }
+
+  .webdev-benefit-icon {
+    font-size: 28px;
+  }
+
+  .webdev-benefit-title {
+    font-size: 15px;
+  }
+
+  .webdev-benefit-desc {
+    font-size: 13px;
+  }
+
+  .webdev-cta {
+    padding: 24px 18px;
+  }
+
+  .webdev-cta-title {
+    font-size: 22px;
+  }
+
+  .webdev-cta-button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  /* Footer mobile */
+  footer .webdev-footer-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 0 14px 14px !important;
+  }
+
+  footer .webdev-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+    max-width: calc(50% - 9px) !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .webdev-container {
+    padding: 0 5px;
+  }
+
+  .webdev-card {
+    padding: 16px 12px;
+    border-radius: 8px;
+  }
+
+  .webdev-title {
+    font-size: 28px;
+    margin: 8px 0 12px;
+  }
+
+  .webdev-intro-text {
+    font-size: 15px;
+  }
+
+  .webdev-image {
+    width: 180px;
+    height: 150px;
+  }
+
+  .webdev-section {
+    padding: 14px;
+  }
+
+  .webdev-section-title {
+    font-size: 18px;
+  }
+
+  .webdev-service-title {
+    font-size: 16px;
+  }
+
+  .webdev-service-desc {
+    font-size: 14px;
+  }
+
+  .webdev-tech-card {
+    width: 140px;
+    padding: 16px 12px;
+  }
+
+  .webdev-tech-icon {
+    font-size: 28px;
+  }
+
+  .webdev-tech-title {
+    font-size: 15px;
+  }
+
+  .webdev-tech-desc {
+    font-size: 11px;
+  }
+
+  .webdev-enhanced {
+    padding: 18px 16px;
+  }
+
+  .webdev-enhanced-title {
+    font-size: 18px;
+  }
+
+  .webdev-benefit-card {
+    padding: 16px;
+  }
+
+  .webdev-benefit-icon {
+    font-size: 26px;
+  }
+
+  .webdev-benefit-title {
+    font-size: 14px;
+  }
+
+  .webdev-benefit-desc {
+    font-size: 12px;
+  }
+
+  .webdev-cta {
+    padding: 20px 15px;
+  }
+
+  .webdev-cta-title {
+    font-size: 20px;
+  }
+
+  .webdev-cta-text {
+    font-size: 15px;
+  }
+
+  .webdev-cta-button {
+    padding: 12px 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  footer .webdev-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+  }
+
+  .webdev-footer-title {
+    font-size: 14px;
+  }
+
+  .webdev-footer-link {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .webdev-copyright {
+    font-size: 11px;
+    margin: 12px auto 0;
+  }
+
+  .webdev-meta {
+    font-size: 11px;
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,526 @@
+/* ProChatInfo.css */
+
+/* Base styles (desktop) */
+.prochat-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.prochat-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 0;
+  padding: 28px 32px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, .10);
+}
+
+.prochat-title {
+  margin: 6px 0 20px;
+  font-size: 36px;
+  color: #0f172a;
+  text-align: center;
+  letter-spacing: .3px;
+}
+
+.prochat-intro-text {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #111827;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.prochat-image-section {
+  text-align: center;
+  margin: 30px 0 40px;
+}
+
+.prochat-image {
+  width: 236px;
+  height: 236px;
+  object-fit: contain;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  background: white;
+  padding: 10px;
+}
+
+.prochat-image-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+}
+
+.prochat-section {
+  margin: 24px 0 28px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.prochat-section-title {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #0f172a;
+  border-bottom: 2px solid rgba(14, 165, 233, 0.3);
+  padding-bottom: 10px;
+}
+
+.prochat-content {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #111827;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.prochat-content-paragraph {
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.prochat-list {
+  margin: 12px 0 0 22px;
+  padding: 0;
+}
+
+.prochat-list-item {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.prochat-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.prochat-advantage-card {
+  background: rgba(14, 165, 233, 0.08);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 10px;
+  padding: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.prochat-advantage-card-hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.15);
+}
+
+.prochat-advantage-title {
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: #0ea5e9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prochat-advantage-desc {
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+.prochat-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+.prochat-stat-card {
+  background: white;
+  border: 2px solid rgba(14, 165, 233, 0.3);
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.prochat-stat-card-hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.2);
+  border-color: #0ea5e9;
+}
+
+.prochat-stat-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+  color: #0ea5e9;
+}
+
+.prochat-stat-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0ea5e9;
+  margin-bottom: 8px;
+}
+
+.prochat-stat-label {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.prochat-enhanced {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(16, 167, 255, 0.05));
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin: 35px 0;
+}
+
+.prochat-enhanced-title {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: #0ea5e9;
+  text-align: center;
+}
+
+.prochat-applications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.prochat-application-card {
+  background: white;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.prochat-application-icon {
+  font-size: 32px;
+  color: #0ea5e9;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.prochat-application-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.prochat-application-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.prochat-cta {
+  text-align: center;
+  margin: 40px 0 30px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(16, 167, 255, 0.1), rgba(74, 108, 247, 0.1));
+  border: 2px solid rgba(16, 167, 255, 0.3);
+  border-radius: 12px;
+}
+
+.prochat-cta-title {
+  margin: 0 0 16px;
+  font-size: 26px;
+  color: #0f172a;
+}
+
+.prochat-cta-text {
+  font-size: 16px;
+  color: #334155;
+  margin: 0 0 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prochat-cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #10a7ff, #4a6cf7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(16, 167, 255, 0.25);
+}
+
+.prochat-meta {
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(17,24,39,.78);
+  text-align: center;
+}
+
+/* Footer styles */
+.prochat-footer-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.prochat-footer-title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  opacity: .95;
+  text-align: center;
+  color: #fff;
+}
+
+.prochat-footer-links {
+  text-align: center;
+}
+
+.prochat-footer-link {
+  display: block;
+  color: rgba(255, 255, 255, .90);
+  padding: 6px 0;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.prochat-footer-link:hover {
+  color: #10a7ff;
+}
+
+.prochat-copyright {
+  margin: 18px auto 0;
+  opacity: .75;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .prochat-container {
+    margin: 15px auto;
+    padding: 0 10px;
+  }
+
+  .prochat-card {
+    padding: 20px 16px;
+  }
+
+  .prochat-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .prochat-intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .prochat-image-section {
+    margin: 20px 0 25px;
+  }
+
+  .prochat-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .prochat-section {
+    margin: 16px 0 20px;
+    padding: 16px;
+  }
+
+  .prochat-section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .prochat-advantages-grid,
+  .prochat-applications-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .prochat-stats {
+    gap: 18px;
+  }
+
+  .prochat-stat-card {
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+  }
+
+  .prochat-stat-value {
+    font-size: 28px;
+  }
+
+  .prochat-enhanced {
+    padding: 22px 18px;
+    margin: 25px 0;
+  }
+
+  .prochat-cta {
+    padding: 24px 18px;
+  }
+
+  .prochat-cta-title {
+    font-size: 22px;
+  }
+
+  .prochat-cta-button {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  /* Footer mobile */
+  footer .prochat-footer-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 0 14px 14px !important;
+  }
+
+  footer .prochat-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+    min-width: calc(50% - 9px) !important;
+    max-width: calc(50% - 9px) !important;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .prochat-container {
+    margin: 10px auto;
+    padding: 0 5px;
+  }
+
+  .prochat-card {
+    padding: 16px 12px;
+    border-radius: 8px;
+  }
+
+  .prochat-title {
+    font-size: 24px;
+  }
+
+  .prochat-intro-text {
+    font-size: 15px;
+  }
+
+  .prochat-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .prochat-section {
+    padding: 14px;
+  }
+
+  .prochat-section-title {
+    font-size: 18px;
+  }
+
+  .prochat-advantage-title {
+    font-size: 16px;
+  }
+
+  .prochat-advantage-desc {
+    font-size: 14px;
+  }
+
+  .prochat-stat-card {
+    padding: 18px 15px;
+  }
+
+  .prochat-stat-value {
+    font-size: 24px;
+  }
+
+  .prochat-stat-label {
+    font-size: 13px;
+  }
+
+  .prochat-application-card {
+    padding: 16px;
+  }
+
+  .prochat-application-title {
+    font-size: 15px;
+  }
+
+  .prochat-application-desc {
+    font-size: 13px;
+  }
+
+  .prochat-cta {
+    padding: 20px 15px;
+  }
+
+  .prochat-cta-title {
+    font-size: 20px;
+  }
+
+  .prochat-cta-text {
+    font-size: 15px;
+  }
+
+  .prochat-cta-button {
+    padding: 12px 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  footer .prochat-footer-inner > div {
+    flex: 0 0 calc(50% - 9px) !important;
+  }
+
+  .prochat-footer-title {
+    font-size: 14px;
+  }
+
+  .prochat-footer-link {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .prochat-copyright {
+    font-size: 11px;
+    margin: 12px auto 0;
+  }
+
+  .prochat-meta {
+    font-size: 11px;
+    margin-top: 16px;
+  }
+}
